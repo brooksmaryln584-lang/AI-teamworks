@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.sqlite
+*.sqlite-*
+*.db
+*.log
+runs/
+reports/
+runtime/
+.claude/settings.local.json
+.codex/auth.json
+.DS_Store
+Thumbs.db

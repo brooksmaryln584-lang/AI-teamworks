@@ -1,0 +1,4 @@
+interface:
+  display_name: "Memory-First Coordination"
+  short_description: "Load memory, claim work, and prove completion safely"
+  default_prompt: "Use $memory-first-coordination to establish session identity, load relevant memory, coordinate the task, and verify completion."
