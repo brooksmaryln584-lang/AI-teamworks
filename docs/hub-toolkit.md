@@ -1,6 +1,6 @@
 # 从中枢提取的轻量工具包
 
-版本：0.1.0-draft。用途：在文档流程之上加入结构化会话记录和新报告创建。验收：有效记录通过、缺少记忆的记录失败、重复创建报告不会覆盖前一份。
+版本：0.2.0-preview。用途：在文档流程之上加入结构化会话记录和新报告创建。验收：有效记录通过、缺少记忆的记录失败、重复创建报告不会覆盖前一份。
 
 ## 包含什么
 
@@ -30,6 +30,8 @@ $scriptRoot = './skills/shared/memory-first-coordination/scripts'
 ```
 
 创建的是空骨架。先编辑 JSON，填写 task.goal、task.scope、memory.sources/findings、live_checks、coordination.state/evidence；存在不确定项时也要记录。再运行：
+
+0.2.0 起 `-Tool` 接受小写客户端标识（如 codex、claude、opencode、zcode、ollama），可附加 `-Model` 与 `-Provider` 记录真实选择。不要在这些字段填写 Key。旧的 Codex/Claude 调用保持兼容，其他客户端也不需要伪装成 codex。
 
 ```powershell
 & "$scriptRoot/validate_receipt.ps1" -Path $receiptPath -Stage preflight

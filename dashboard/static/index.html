@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI-teamworks · 协作窗口</title><link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script></head>
+<body>
+<aside><a class="brand" href="/">a<span>t</span><b>AI-teamworks</b></a><div class="aside-label">协作空间</div><a class="nav active" href="#overview">◫　运行概览</a><a class="nav" href="#tasks">☷　任务看板</a><a class="nav" href="#agents">◎　会话状态</a><div class="aside-bottom"><span class="tiny-dot"></span>本地协作 · v0.2.0<p>模型各有所长<br>团队共享一个事实来源</p></div></aside>
+<main id="overview"><header><span>工作空间 / <strong>团队概览</strong></span><div class="header-right"><span id="mode">连接中</span><span class="avatar">AT</span></div></header>
+<section class="heading"><div><div class="eyebrow">TEAM OPERATIONS</div><h1>协作，尽在眼前。</h1><p>让每个会话的任务、范围与交接清晰可见。</p></div><button id="refresh">↻ 手动刷新</button></section>
+<section id="connection" class="connection" role="status" aria-live="polite">正在读取 coord…</section>
+<div class="meta-line"><span id="source"></span><label><input id="auto" type="checkbox" checked> 每 5 秒刷新</label></div>
+<section class="stats" aria-label="最近任务统计"><article><span>待领取</span><strong id="pending">—</strong><small>等待执行者接手</small></article><article><span>进行中</span><strong id="claimed">—</strong><small>当前持有任务租约</small></article><article><span>需要关注</span><strong id="attention">—</strong><small>失败 / 阻塞 / 租约风险</small></article><article><span>账本已完成</span><strong id="completed">—</strong><small>不等同于独立验收</small></article></section>
+<section class="panel" id="tasks"><div class="panel-head"><div><h2>任务看板 <span id="count">0</span></h2><p id="window-note">仅统计最近 200 条任务，不代表全部历史。</p></div><div class="filters"><input id="search" type="search" placeholder="搜索任务、会话或范围" aria-label="搜索任务"><select id="state" aria-label="筛选任务状态"><option value="all">所有状态</option><option value="pending">待领取</option><option value="claimed">进行中</option><option value="completed">已完成</option><option value="cancelled">已取消</option><option value="failed">失败</option><option value="attention">需要关注</option></select></div></div><div id="task-list" class="task-list"><div class="empty">等待 coord 数据</div></div></section>
+<section class="panel" id="agents"><div class="panel-head"><div><h2>协作会话 <span id="agent-count">0</span></h2><p>心跳是最近活动线索，不代表进程仍在运行。</p></div><span class="subtle">120 秒内心跳标记为“近期活跃”</span></div><div id="agent-list" class="agents"><div class="empty">尚未收到会话数据</div></div></section>
+<footer><span id="updated">尚无成功快照</span><span>浏览模式 · 面板不会替会话领取、续租或完成任务</span></footer>
+</main></body></html>

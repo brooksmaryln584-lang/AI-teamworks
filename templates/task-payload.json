@@ -1,0 +1,12 @@
+{
+  "teamworks": {
+    "schema_version": "0.2.0",
+    "project": "example-project",
+    "tool": "opencode",
+    "model": "REPLACE_WITH_ACTUAL_MODEL_ID",
+    "role": "executor",
+    "scope": ["src/example/**"],
+    "blocker": "",
+    "handoff": "reports/REPLACE_WITH_RUN_ID-handoff.md"
+  }
+}

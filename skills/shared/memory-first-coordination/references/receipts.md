@@ -9,6 +9,8 @@ Keep one JSON receipt per run. The receipt is a compact audit record, not a tran
   "schema_version": 2,
   "identity": {
     "tool": "claude",
+    "model": "actual-model-id",
+    "provider": "actual-provider-id",
     "agent_id": "claude-vscode-a1b2c3d4",
     "session_id": "a1b2c3d4",
     "run_id": "20260707-claude-a1b2c3d4",
@@ -61,6 +63,7 @@ Keep one JSON receipt per run. The receipt is a compact audit record, not a tran
 ## Rules
 
 - Keep secrets and full prompts out of receipts.
+- `tool` identifies the client (for example codex, claude, opencode, zcode, ollama); optional `model` and `provider` record the actual configuration. Do not infer a model from a client name.
 - Use forward-slash paths in JSON when convenient.
 - Add proxy actions as `{ "actor": "...", "action": "...", "reason": "..." }`.
 - Set executor status to `submitted`, never directly to `verified`.

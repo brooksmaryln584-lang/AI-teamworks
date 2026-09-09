@@ -1,6 +1,16 @@
 # 提示词示例
 
-版本：0.1.0-draft。用途：启动、分工、复核和恢复。验收：输出能对应任务卡、文件差异和实际检查。方括号内容必须先替换。
+版本：0.2.0-preview。用途：启动、分工、复核和恢复。验收：输出能对应任务卡、文件差异和实际检查。方括号内容必须先替换。
+
+## 按角色和客户端选择
+
+- [协调者：拆分范围和依赖](coordinator.md)
+- [OpenCode / DeepSeek：执行](opencode-deepseek.md)
+- [ZCode / GLM：执行与交接](zcode-glm.md)
+- [独立复核与集成](reviewer.md)
+- [跨模型交接协议](../docs/handoff-protocol.md) 与 [新版交接模板](../templates/handoff-v2.md)
+
+以下通用模板仍适用于 Codex、Claude Code 和其他已完成能力验收的客户端。
 
 ## 1. 只读摸底
 

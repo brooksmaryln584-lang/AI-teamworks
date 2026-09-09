@@ -1,6 +1,6 @@
 # AI-teamworks 共享工作流
 
-版本：0.1.0-draft。用途：共享规则入口。验收：按流程完成一个有产物、证据和独立复核的任务。
+版本：0.2.0-preview。用途：共享规则入口。验收：按流程完成一个有产物、证据和独立复核的任务。
 
 1. 阅读 [AGENTS.md](AGENTS.md)、项目任务卡、相关记忆及最新交接。
 2. 建立唯一身份，核对实时状态，记录来源、发现和不确定项。
@@ -9,3 +9,5 @@
 5. 每次新建报告，交付后保留原文件；稳定知识进入项目记忆。
 
 手工记录见 [模板](templates/task-and-handoff.md)，可选自动字段校验见 [中枢工具包](docs/hub-toolkit.md)。权限与所有权见 [权限边界](docs/permissions.md)。
+
+新增客户端先走 [能力验收](templates/onboarding-check.md)；跨模型接力使用 [交接协议](docs/handoff-protocol.md)。[协作窗口](docs/dashboard.md) 展示协调状态，不替代执行者和复核者的证据。

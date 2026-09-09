@@ -1,11 +1,13 @@
 # 应用仓库与来源
 
-文档版本：0.1.0-draft。链接于 2026-09-09 读取核对；不把上游最新版本自动当作本方案已测试版本。
+文档版本：0.2.0-preview。链接于 2026-09-09 读取核对；不把上游最新版本自动当作本方案已测试版本。
 
 | 工具 | 用途 | 上游仓库 | 接入级别 |
 | --- | --- | --- | --- |
 | Codex CLI | 代码执行和审查 | [openai/codex](https://github.com/openai/codex) | 核心 |
 | Claude Code | 代码执行和审查 | [anthropics/claude-code](https://github.com/anthropics/claude-code) | 双工具协作核心 |
+| OpenCode | 接入 DeepSeek 等模型的编码客户端 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 多模型扩展 |
+| ZCode | 接入 GLM 的开发客户端 | [官方站与文档](https://zcode.z.ai/)；未核实完整客户端开源仓库 | 多模型扩展 |
 | coord | 任务领取、租约和状态协调 | [DmarshalTU/coord](https://github.com/DmarshalTU/coord) | 多会话推荐 |
 | CC Switch | 管理支持工具的配置切换 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 可选 |
 | Ollama | 本地模型运行 | [ollama/ollama](https://github.com/ollama/ollama) | 可选 |

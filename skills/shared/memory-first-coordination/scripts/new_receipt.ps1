@@ -1,6 +1,7 @@
+# AI-teamworks receipt creator v0.2.0: client, model and provider are distinct.
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory)][ValidateSet('codex', 'claude')][string]$Tool,
+    [Parameter(Mandatory)][ValidatePattern('^[a-z][a-z0-9-]{0,31}$')][string]$Tool,
     [Parameter(Mandatory)][string]$AgentId,
     [Parameter(Mandatory)][string]$SessionId,
     [Parameter(Mandatory)][string]$RunId,
@@ -8,7 +9,9 @@ param(
     [Parameter(Mandatory)][string]$TaskId,
     [Parameter(Mandatory)][ValidateSet('executor', 'reviewer', 'solo')][string]$Role,
     [Parameter(Mandatory)][string]$OutputPath,
-    [int]$MaxRounds = 6
+    [int]$MaxRounds = 6,
+    [string]$Model = '',
+    [string]$Provider = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -19,6 +22,8 @@ $receipt = [ordered]@{
     schema_version = 2
     identity = [ordered]@{
         tool = $Tool
+        model = $Model
+        provider = $Provider
         agent_id = $AgentId
         session_id = $SessionId
         run_id = $RunId

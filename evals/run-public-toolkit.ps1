@@ -1,4 +1,4 @@
-# Public toolkit smoke evaluation v0.1.0
+# Public toolkit smoke evaluation v0.2.0
 # Purpose: check positive/negative receipts and immutable report allocation.
 # Acceptance: every case prints PASS; process exits 0.
 [CmdletBinding()]
@@ -61,4 +61,9 @@ $hash = (Get-FileHash -LiteralPath $first).Hash
 $second = & $creator -Project $work -Slug same-name -RunId $session
 if ($first -eq $second -or (Get-FileHash -LiteralPath $first).Hash -ne $hash) { throw 'Report overwritten' }
 Write-Host 'PASS reports allocated separately; previous report hash unchanged'
-Write-Host '7 checks passed. Synthetic fixtures remain in ignored runs directory.'
+$newToolPath = Join-Path $work 'opencode.json'
+& (Join-Path $scriptRoot 'new_receipt.ps1') -Tool opencode -Model test-model -Provider deepseek -AgentId ('opencode-' + $session) -SessionId $session -RunId $session -Project $root -TaskId ('eval-' + $session) -Role executor -OutputPath $newToolPath | Out-Null
+$newTool = Get-Content -Raw -LiteralPath $newToolPath | ConvertFrom-Json
+if ($newTool.identity.tool -ne 'opencode' -or $newTool.identity.model -ne 'test-model' -or $newTool.identity.provider -ne 'deepseek') { throw 'Client/model/provider metadata lost' }
+Write-Host 'PASS additional client identity and model/provider metadata'
+Write-Host '8 checks passed. Synthetic fixtures remain in ignored runs directory.'
