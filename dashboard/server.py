@@ -16,7 +16,7 @@ from urllib.parse import urlsplit
 from urllib.request import HTTPRedirectHandler, ProxyHandler, Request, build_opener
 import webbrowser
 
-VERSION = "0.2.0"
+VERSION = "1.2.0"
 STATIC = Path(__file__).parent / "static"
 LIMIT = 200
 MAX_RESPONSE = 4 * 1024 * 1024

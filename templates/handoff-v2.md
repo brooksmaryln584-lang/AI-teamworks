@@ -1,6 +1,6 @@
 # 交接：填写任务名称
 
-版本：0.2.0-preview。用途：跨客户端恢复与独立复核。验收：接收者凭本文件和仓库即可核对下一步。
+版本：1.2.0。用途：跨客户端恢复与独立复核。验收：接收者凭本文件和仓库即可核对下一步。
 
 - task_id / source_agent_id / target_agent_id：
 - tool / model / provider / role：

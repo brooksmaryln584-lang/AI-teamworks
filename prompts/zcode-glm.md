@@ -1,6 +1,6 @@
 # ZCode / GLM 执行与交接提示词
 
-版本：0.2.0-preview。用途：在 Workspace 规则约束下实现与交接。验收：接收者可直接定位产物及检查点。
+版本：1.2.0。用途：在 Workspace 规则约束下实现与交接。验收：接收者可直接定位产物及检查点。
 
 ```text
 你在 ZCode 中工作，记录 tool=zcode、实际 GLM 模型 ID、provider 和本次角色。

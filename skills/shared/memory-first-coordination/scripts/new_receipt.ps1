@@ -1,4 +1,4 @@
-# AI-teamworks receipt creator v0.2.0: client, model and provider are distinct.
+# AI-teamworks receipt creator v1.2.0: client, model and provider are distinct.
 [CmdletBinding()]
 param(
     [Parameter(Mandatory)][ValidatePattern('^[a-z][a-z0-9-]{0,31}$')][string]$Tool,

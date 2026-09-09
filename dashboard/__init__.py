@@ -1,1 +1,1 @@
-"""AI-teamworks local coordination dashboard, version 0.2.0."""
+"""AI-teamworks local coordination dashboard, version 1.2.0."""

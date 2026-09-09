@@ -1,4 +1,4 @@
-# Public toolkit smoke evaluation v0.2.0
+# Public toolkit smoke evaluation v1.2.0
 # Purpose: check positive/negative receipts and immutable report allocation.
 # Acceptance: every case prints PASS; process exits 0.
 [CmdletBinding()]

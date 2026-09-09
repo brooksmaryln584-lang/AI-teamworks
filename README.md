@@ -2,7 +2,9 @@
 
 让 Codex、Claude Code、OpenCode / DeepSeek、ZCode / GLM 围绕同一项目分工、交接和复核，并在一个窗口查看协作进度。
 
-**版本：v0.2.0-preview · 文档核对日期：2026-09-09 · 状态：多模型与协作窗口预览**
+**版本：v1.2.0**
+
+文档核对日期：2026-09-09
 
 这是一套从个人 AI 工具中枢实践整理的搭建指导，附带应用仓库链接、可复制提示词、协作规则和本地 coord 面板。目标仓库：`brooksmaryln584-lang/AI-teamworks`。提供记忆协作 Skill、receipt 校验器和新报告创建器；本机 provider 配置及私人数据库不分发。提示词约定不能替代工具权限控制。
 

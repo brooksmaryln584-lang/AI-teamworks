@@ -1,4 +1,4 @@
-# AI-teamworks dashboard launcher v0.2.0
+# AI-teamworks dashboard launcher v1.2.0
 # Purpose: run the local viewer in the background without keeping a terminal open.
 # Acceptance: health endpoint responds on loopback; PID/log paths are printed.
 [CmdletBinding()]
